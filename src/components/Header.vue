@@ -1,6 +1,6 @@
 <template>
   <header>
-      <img src="" alt="">
+      <img src="../asset/img/dc-logo-bg.png" alt="">
       <ul>
           <li>CHARACTERS</li>
           <li>COMICS</li>
@@ -29,3 +29,4 @@ export default {
 <style>
 
 </style>
+
