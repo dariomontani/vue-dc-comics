@@ -16,6 +16,7 @@ export default {
 <style lang="scss" scope>
     .jumbotron{
         img{
+            width: 100vw;
         }
     }
 </style>
