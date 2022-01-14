@@ -1,7 +1,10 @@
 <template>
   <main>
-    <div class="container containerCards">
-      <div class="card">
+    <div class="containerJumbo">
+      <Jumbo />
+    </div>
+    <div class="containerCards">
+      <div class="container card">
         <Card :key="index" v-for="(element, index) in cards" :image="element.thumb" :title="element.series"/>
       </div>
     </div>
@@ -10,11 +13,13 @@
 
 <script>
 import Card from "./Card.vue"
+import Jumbo from "./Jumbo.vue"
 
 export default {
     name: 'Main',
     components: {
       Card,
+      Jumbo,
     },
     data(){
         return {
@@ -99,9 +104,15 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  background-color: black;
-  padding: 4em 2em;
+  .containerJumbo{
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
   .containerCards{
+    background-color: black;
+    padding: 4em 2em;
     .card{
       display: flex;
       flex-wrap: wrap;
