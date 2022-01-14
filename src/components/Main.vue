@@ -105,7 +105,7 @@ export default {
 <style lang="scss" scoped>
 main {
   .containerJumbo{
-    height: 400px;
+    height: 350px;
     overflow: hidden;
     display: flex;
     justify-content: center;
