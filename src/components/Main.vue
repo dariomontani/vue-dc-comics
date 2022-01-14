@@ -1,7 +1,9 @@
 <template>
   <main>
-    <div class="containerCards">
+    <div class="container containerCards">
+      <div class="card">
         <Card :key="index" v-for="(element, index) in cards" :image="element.thumb" :title="element.series"/>
+      </div>
     </div>
   </main>
 </template>
@@ -98,13 +100,13 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: black;
-  display: flex;
-  align-items: center;
+  padding: 4em 2em;
   .containerCards{
     .card{
-      h3{
-        color: white;
-      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5em;
     }
   }
 }
