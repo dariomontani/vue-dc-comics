@@ -66,7 +66,7 @@ data(){
 <style lang="scss" scoped>
 .background{
   height: 400px;
-  background-color: gray;
+  background-image: url(../assets/img/footer-bg.jpg);
   .container{
     padding: 2em 0;
     .containerList{
